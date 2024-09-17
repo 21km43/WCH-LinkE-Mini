@@ -4939,7 +4939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
 			(at 111.76 110.49 0)
 			(effects
 				(font
@@ -7236,7 +7236,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Position Offset" "0, 0.13"
+		(property "JLCPCB Position Offset" "0, 1.05"
 			(at 52.07 59.69 0)
 			(effects
 				(font
@@ -7644,6 +7644,15 @@
 			)
 		)
 		(property "LCSC" "C5120796"
+			(at 102.87 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Position Offset" "-0.6, 0"
 			(at 102.87 44.45 0)
 			(effects
 				(font
@@ -8561,7 +8570,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
 			(at 111.76 139.7 0)
 			(effects
 				(font
