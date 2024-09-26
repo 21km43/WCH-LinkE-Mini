@@ -28,3 +28,4 @@ You can see parts list from the BOM below.
   - 3.3V LDO change from AMS1117-3.3 to RT9080-33GJ5
   - Move CH217K to top side
 - [v1.0.0](https://github.com/21km43/WCH-LinkE/tree/f1d92fe91850c45036395253008bbfae57f4c86a)
+  - First release
