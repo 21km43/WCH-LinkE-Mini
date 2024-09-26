@@ -8,8 +8,8 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "WCH-LinkE")
-		(rev "v1.0.0")
+		(title "WCH-LinkE Clone")
+		(rev "v1.1.0")
 	)
 	(layers
 		(0 "F.Cu" signal)

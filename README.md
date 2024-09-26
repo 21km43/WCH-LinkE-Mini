@@ -20,3 +20,9 @@ You can see parts list from the BOM below.
 ## Schematic and Board image
 [Board schematic](WCH-LinkE.pdf)  
 ![Board Image](WCH-LinkE.png)
+
+## Previous version
+
+Current version: v1.1.0
+
+[v1.0.0](https://github.com/21km43/WCH-LinkE/tree/f1d92fe91850c45036395253008bbfae57f4c86a)
