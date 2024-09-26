@@ -7362,7 +7362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
 			(at 55.88 59.69 0)
 			(effects
 				(font
@@ -7389,7 +7389,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2988369"
+		(property "LCSC" "C393939"
 			(at 52.07 59.69 0)
 			(effects
 				(font
@@ -7398,7 +7398,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Position Offset" "0, 1.3"
+		(property "JLCPCB Position Offset" "0, 1.36"
 			(at 52.07 59.69 0)
 			(effects
 				(font

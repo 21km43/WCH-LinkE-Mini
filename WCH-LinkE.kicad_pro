@@ -59,7 +59,7 @@
         }
       ],
       "drc_exclusions": [
-        "lib_footprint_mismatch|131222000|118110000|0d7b358a-883e-41b6-8a96-8ffd9dee51b6|00000000-0000-0000-0000-000000000000"
+        "footprint_type_mismatch|130937000|118110000|0d7b358a-883e-41b6-8a96-8ffd9dee51b6|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
