@@ -7354,7 +7354,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+		(property "Value" "USB_C_Receptacle_USB3.1_16P"
 			(at 52.07 39.37 0)
 			(effects
 				(font
@@ -7362,7 +7362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
+		(property "Footprint" "USB:USB_C_Receptacle"
 			(at 55.88 59.69 0)
 			(effects
 				(font
@@ -7380,7 +7380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+		(property "Description" "USB 3.1-only 16P Type-C Receptacle connector"
 			(at 52.07 59.69 0)
 			(effects
 				(font
@@ -7398,7 +7398,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Position Offset" "0, 1.36"
+		(property "JLCPCB Position Offset" "0, 1.02"
 			(at 52.07 59.69 0)
 			(effects
 				(font
