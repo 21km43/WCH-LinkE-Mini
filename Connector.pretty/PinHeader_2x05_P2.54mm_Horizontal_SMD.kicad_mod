@@ -63,7 +63,7 @@
 			)
 		)
 	)
-	(attr smd)
+	(attr smd allow_missing_courtyard)
 	(fp_rect
 		(start 2.1 -6.25)
 		(end 3.3 6.25)
@@ -129,17 +129,6 @@
 		(fill solid)
 		(layer "Dwgs.User")
 		(uuid "365f2f69-b551-4d74-97e3-d607a7f9d7ac")
-	)
-	(fp_rect
-		(start -2.413 -6.604)
-		(end 9.652 6.604)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill none)
-		(layer "F.CrtYd")
-		(uuid "09638159-f11f-4a6d-9042-d026896fb8b8")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 11.192 0)
