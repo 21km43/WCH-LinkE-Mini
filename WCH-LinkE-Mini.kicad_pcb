@@ -10622,8 +10622,8 @@
 			(justify left mirror)
 		)
 	)
-	(gr_text "WCH-LinkE"
-		(at 132.588 125.73 -0)
+	(gr_text "WCH-LinkE-Mini"
+		(at 129.159 125.73 0)
 		(layer "B.SilkS")
 		(uuid "80a8d655-b8dd-49b0-a111-e39791f824a8")
 		(effects
@@ -10631,7 +10631,7 @@
 				(size 0.8 0.8)
 				(thickness 0.15)
 			)
-			(justify mirror)
+			(justify right mirror)
 		)
 	)
 	(gr_text "3V3"
