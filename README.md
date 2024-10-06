@@ -18,8 +18,8 @@ You can see parts list from the BOM below.
 [Parts List](/production/bom.csv)
 
 ## Schematic and Board image
-[Board schematic](WCH-LinkE.pdf)  
-![Board Image](WCH-LinkE.png)
+[Board schematic](WCH-LinkE-Mini.pdf)  
+![Board Image](WCH-LinkE-Mini.png)
 
 ## Previous version & Changelog
 
