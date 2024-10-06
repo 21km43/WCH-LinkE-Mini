@@ -1,6 +1,6 @@
-# WCH-LinkE
+# WCH-LinkE-Mini
 
-[WCH-LinkE](https://www.wch-ic.com/products/WCH-Link.html) Clone
+This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-Link.html)
 
 ## Requirements
 * [KiCAD 8.0](https://www.kicad.org/)
@@ -27,7 +27,7 @@ You can see parts list from the BOM below.
   - Fix fill zone
   - Fix trace width for 3.3V and 5V
   - Change 3.3V LDO from AMS1117-3.3 to XC6206P332MR-G
-  - Change load switcj structure (using PMOS)
+  - Change load switch structure (using PMOS)
   - Change resistor for LEDs
   - Reduced board size
 - [v1.0.0](https://github.com/21km43/WCH-LinkE/tree/f1d92fe91850c45036395253008bbfae57f4c86a)
