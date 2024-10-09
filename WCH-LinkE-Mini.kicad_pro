@@ -58,9 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "lib_footprint_mismatch|131222000|118110000|0d7b358a-883e-41b6-8a96-8ffd9dee51b6|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -182,7 +180,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.25,
+        0.5,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -501,7 +502,7 @@
       "specctra_dsn": "",
       "step": "",
       "svg": "",
-      "vrml": ""
+      "vrml": "WCH-LinkE.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -615,7 +616,7 @@
   "sheets": [
     [
       "994bdb9a-227d-4e61-bdbf-a26950ab87e1",
-      "ルート"
+      "Root"
     ]
   ],
   "text_variables": {}
