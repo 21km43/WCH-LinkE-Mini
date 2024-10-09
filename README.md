@@ -29,6 +29,6 @@ You can see parts list from the BOM below.
   - Change 3.3V LDO from AMS1117-3.3 to XC6206P332MR-G
   - Change load switch structure (using PMOS)
   - Change resistor for LEDs
-  - Reduce board size
+  - Minimize board size
 - [v1.0.0](https://github.com/21km43/WCH-LinkE/tree/f1d92fe91850c45036395253008bbfae57f4c86a)
   - First release
