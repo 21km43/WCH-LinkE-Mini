@@ -15,7 +15,6 @@ This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-
 [MIT LICENSE](/LICENSE)
 
 ## Parts List
-You can see parts list from the BOM below.  
 [Parts List](/production/bom.csv)
 
 ## Schematic and Board image
