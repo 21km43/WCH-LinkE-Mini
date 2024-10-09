@@ -9,6 +9,7 @@ This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-
 ## Feature
 * Change USB Connector to Type-C
 * No current limit for 3.3V and 5V output (Beware of short)
+  * 3.3V output is limited to 200mA max by LDO
 * Optimize for ordering [JLCPCB](https://jlcpcb.com)
 
 ## LICENSE
