@@ -22,6 +22,10 @@ This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-
 [Board schematic](WCH-LinkE-Mini.pdf)  
 ![Board Image](WCH-LinkE-Mini.png)
 
+IDC Connectors are available here
+- [IDC-Header(socket)](https://www.digikey.jp/ja/products/detail/sullins-connector-solutions/SBH11-PBPC-D05-ST-BK/1990062)
+- [IDC-Header(header)](https://www.digikey.jp/ja/products/detail/sullins-connector-solutions/SFH11-PBPC-D05-ST-BK/1990087)
+
 ## Previous version & Changelog
 
 - v1.1.0 (latest)
