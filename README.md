@@ -8,8 +8,6 @@ This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-
 
 ## Feature
 * Change USB Connector to Type-C
-* No current limit for 3.3V and 5V output (Beware of short)
-  * 3.3V output is limited to 200mA max by LDO
 * Optimize for ordering [JLCPCB](https://jlcpcb.com)
 
 ## LICENSE
@@ -28,7 +26,9 @@ IDC Connectors are available here
 
 ## Previous version & Changelog
 
-- v1.1.0 (latest)
+- v1.2.0 (latest)
+  -  Add a resettable fuse for 5V output (Trip current is 750mA)
+- v1.1.0
   - Fix fill zone
   - Fix trace width for 3.3V and 5V
   - Change 3.3V LDO from AMS1117-3.3 to XC6206P332MR-G
