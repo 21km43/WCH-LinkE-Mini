@@ -449,7 +449,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "WCH-LinkE.kicad_pro",
+    "filename": "WCH-LinkE-Mini.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -616,7 +616,7 @@
   "sheets": [
     [
       "994bdb9a-227d-4e61-bdbf-a26950ab87e1",
-      "Root"
+      "ルート"
     ]
   ],
   "text_variables": {}
