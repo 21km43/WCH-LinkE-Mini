@@ -31,5 +31,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gerber
+          name: production
           path: ./production
