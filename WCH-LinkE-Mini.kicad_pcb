@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.69)
 		(legacy_teardrops no)
@@ -13,34 +13,34 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -84,11 +84,12 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(aux_axis_origin 127 127)
 		(grid_origin 127 127)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -98,7 +99,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -106,16 +106,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -170,7 +174,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R12"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8e46ea44-646c-414d-834e-54a8216b7882")
@@ -182,25 +186,12 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "0c50b217-39f6-44b8-a5c3-9ec8d98df862")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "08e3ada0-d9d0-4722-8a04-1026595a7364")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -246,7 +237,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/2edeb321-2208-4adc-86c5-0652eee100c6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -350,7 +341,7 @@
 			(uuid "3116dcea-ba12-4c97-a51e-958e58c97253")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "238c3b5a-577b-4cfd-a7f3-7c7534059043")
 			(effects
@@ -363,7 +354,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -372,7 +363,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -383,7 +374,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 26 "Net-(J1-CC2)")
 			(pintype "passive")
@@ -392,7 +383,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -400,6 +391,7 @@
 			)
 			(uuid "1852486e-0db0-4c56-9ef9-0bf514b9b849")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -441,21 +433,8 @@
 				)
 			)
 		)
-		(property "Footprint" "USB:USB_C_Receptacle"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "633a55a8-1825-4856-93ac-9a3cfc8c23bb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -468,7 +447,7 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -481,7 +460,7 @@
 			)
 		)
 		(property "LCSC" "C2988369"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -494,7 +473,7 @@
 			)
 		)
 		(property "JLCPCB Position Offset" "0, 1"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -508,7 +487,7 @@
 		)
 		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/8247e36b-b286-4899-8e4b-c97687509455")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -669,7 +648,7 @@
 		(pad "A1" smd rect
 			(at -3.2 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -678,7 +657,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -689,7 +668,7 @@
 		(pad "A4" smd rect
 			(at -2.4 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "Net-(D3-A)")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -698,7 +677,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -709,7 +688,7 @@
 		(pad "A5" smd rect
 			(at -1.25 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 29 "Net-(J1-CC1)")
 			(pinfunction "CC1")
 			(pintype "bidirectional")
@@ -718,7 +697,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -729,7 +708,7 @@
 		(pad "A6" smd rect
 			(at -0.25 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 22 "/USB_P")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -738,7 +717,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -749,7 +728,7 @@
 		(pad "A7" smd rect
 			(at 0.25 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "/USB_N")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -758,7 +737,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -769,7 +748,7 @@
 		(pad "A8" smd rect
 			(at 1.25 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 27 "unconnected-(J1-SBU1-PadA8)")
 			(pinfunction "SBU1")
 			(pintype "bidirectional+no_connect")
@@ -778,7 +757,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -789,7 +768,7 @@
 		(pad "A9" smd rect
 			(at 2.4 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "Net-(D3-A)")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -798,7 +777,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -809,7 +788,7 @@
 		(pad "A12" smd rect
 			(at 3.2 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -818,7 +797,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -829,7 +808,7 @@
 		(pad "B1" smd rect
 			(at 3.2 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -838,7 +817,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -849,7 +828,7 @@
 		(pad "B4" smd rect
 			(at 2.4 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "Net-(D3-A)")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -858,7 +837,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -869,7 +848,7 @@
 		(pad "B5" smd rect
 			(at 1.75 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 26 "Net-(J1-CC2)")
 			(pinfunction "CC2")
 			(pintype "bidirectional")
@@ -878,7 +857,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -889,7 +868,7 @@
 		(pad "B6" smd rect
 			(at 0.75 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 22 "/USB_P")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -898,7 +877,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -909,7 +888,7 @@
 		(pad "B7" smd rect
 			(at -0.75 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "/USB_N")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -918,7 +897,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -929,7 +908,7 @@
 		(pad "B8" smd rect
 			(at -1.75 -3.725 270)
 			(size 0.3 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 28 "unconnected-(J1-SBU2-PadB8)")
 			(pinfunction "SBU2")
 			(pintype "bidirectional+no_connect")
@@ -938,7 +917,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -949,7 +928,7 @@
 		(pad "B9" smd rect
 			(at -2.4 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "Net-(D3-A)")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -958,7 +937,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -969,7 +948,7 @@
 		(pad "B12" smd rect
 			(at -3.2 -3.725 270)
 			(size 0.6 1.24)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -978,7 +957,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -1000,7 +979,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -1022,7 +1001,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -1044,7 +1023,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -1066,7 +1045,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -1074,6 +1053,7 @@
 			)
 			(uuid "614695be-d403-421b-a76b-d453a1f754ca")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1093,7 +1073,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R18"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5851b080-4ff7-471b-ad11-94aaf7490af0")
@@ -1105,25 +1085,12 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "5c985325-d69c-41c1-b034-4ec674958e4d")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "12d30d02-7fa2-42cd-bb61-fa00f94a95c2")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1169,7 +1136,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/f174eeed-4a82-49c4-a725-c377a2b2a2fa")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1273,7 +1240,7 @@
 			(uuid "719d239c-9cb0-4bb9-818d-c66875c9660d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c0fe7886-e1ab-4d1b-ad8c-72a69634d9c8")
 			(effects
@@ -1286,7 +1253,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pintype "passive")
@@ -1295,12 +1262,13 @@
 		(pad "2" smd roundrect
 			(at 0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 37 "Net-(Q1-G)")
 			(pintype "passive")
 			(uuid "8c1b4d91-8daa-4cc5-b0b4-34dfa517e9b8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1338,19 +1306,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4126961e-ee2d-4d51-bc66-0b3bb9b2770e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1396,7 +1351,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/0eb0bbb0-c898-447e-9335-6389987add14")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1513,7 +1468,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "/D_SWDIO")
 			(pintype "passive")
@@ -1522,7 +1477,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -1533,7 +1488,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 19 "Net-(U2-PC6)")
 			(pintype "passive")
@@ -1542,7 +1497,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -1550,6 +1505,7 @@
 			)
 			(uuid "4127fbb8-e5f9-4932-b3ff-a916eed85ae9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1587,19 +1543,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8eeef3c7-d901-4862-ba99-6cd0d2983f9b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1645,7 +1588,7 @@
 		)
 		(property ki_fp_filters "SOT?23?3*")
 		(path "/e8b0abf1-2141-4512-9bfd-8a47f96d1b89")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1696,7 +1639,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "4221db7e-ae02-48c8-888d-4aec6a8758b2")
 		)
@@ -1804,7 +1747,7 @@
 		(pad "1" smd roundrect
 			(at -1.1375 -0.95 180)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pinfunction "GND")
@@ -1814,7 +1757,7 @@
 		(pad "2" smd roundrect
 			(at -1.1375 0.95 180)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pinfunction "VO")
@@ -1824,13 +1767,14 @@
 		(pad "3" smd roundrect
 			(at 1.1375 0 180)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+5V")
 			(pinfunction "VI")
 			(pintype "power_in")
 			(uuid "f86c9c20-2278-4073-bda3-3769576f496d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-3.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1872,21 +1816,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "64889880-68cb-4296-bc3e-b5ec0bd58022")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1899,7 +1830,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1912,7 +1843,7 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1926,7 +1857,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/6607ab1f-7a2a-421a-ac55-2f764d630285")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2043,7 +1974,7 @@
 		(pad "1" smd roundrect
 			(at -0.48 0 270)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pintype "passive")
@@ -2052,7 +1983,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -2063,7 +1994,7 @@
 		(pad "2" smd roundrect
 			(at 0.48 0 270)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -2072,7 +2003,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -2080,6 +2011,7 @@
 			)
 			(uuid "96e312b1-7929-43ff-b6d4-1512b535b6aa")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2117,19 +2049,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fddc1f0c-eadd-43fe-b7cf-b33b61e04489")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2175,7 +2094,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/d1f10d9c-e679-4ba1-bb6c-0d8655323760")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2292,7 +2211,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 17 "Net-(U2-PB14)")
 			(pintype "passive")
@@ -2301,7 +2220,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -2312,7 +2231,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 10 "/TDO")
 			(pintype "passive")
@@ -2321,7 +2240,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -2329,6 +2248,7 @@
 			)
 			(uuid "830e2130-ed0b-4da2-a011-3f7f1100f4ab")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2366,19 +2286,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aef44033-5394-4c04-9e40-0e6628350bbf")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2424,7 +2331,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/49f6663c-dd56-451a-9c41-3b0f3f4c3093")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2541,7 +2448,7 @@
 		(pad "1" smd roundrect
 			(at -0.48 0 180)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pintype "passive")
@@ -2550,7 +2457,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -2561,7 +2468,7 @@
 		(pad "2" smd roundrect
 			(at 0.48 0 180)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -2570,7 +2477,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -2578,6 +2485,7 @@
 			)
 			(uuid "22018fb3-c993-4ee6-a93c-9adfacb168c3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2615,19 +2523,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9d75680d-58ea-4b64-8ab0-66bc877580a1")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2673,7 +2568,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/052f1b43-6cab-477a-85b1-44de90a63a5b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2724,7 +2619,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "83903fcc-5071-49b3-97d6-d8cb9530f43c")
 		)
@@ -2832,7 +2727,7 @@
 		(pad "1" smd roundrect
 			(at -0.9375 -0.95 180)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pinfunction "G")
@@ -2842,7 +2737,7 @@
 		(pad "2" smd roundrect
 			(at -0.9375 0.95 180)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 33 "/PB12")
 			(pinfunction "S")
@@ -2852,13 +2747,14 @@
 		(pad "3" smd roundrect
 			(at 0.9375 0 180)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 31 "/PB12_5V")
 			(pinfunction "D")
 			(pintype "passive")
 			(uuid "27507581-7def-474a-987d-4e55a47dc750")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2900,21 +2796,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4cacb95c-2ea4-4141-be98-39eda38a5f1a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2927,7 +2810,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2940,7 +2823,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2954,7 +2837,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ab8daecb-a70c-4ab8-b1cf-fff610811ff4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3071,7 +2954,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+5V")
 			(pintype "passive")
@@ -3080,12 +2963,13 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 38 "Net-(Q2-G)")
 			(pintype "passive")
 			(uuid "ddaf1e95-cd1c-4da0-9712-3cb9ca113e29")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3123,19 +3007,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Switch:TS-1088-AR02016"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6835a772-23f9-4c57-86e3-8de04c95c143")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3180,7 +3051,7 @@
 			)
 		)
 		(path "/606a1c8b-50c2-4b19-b618-ba70a5451ad7")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3330,7 +3201,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "04282f03-9c1d-40f4-aca0-f8011ecd3df8")
 		)
@@ -3348,7 +3219,7 @@
 		(pad "1" smd rect
 			(at -2.075 0)
 			(size 1.35 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 16 "/IAP")
 			(pinfunction "1")
 			(pintype "passive")
@@ -3357,7 +3228,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -3368,7 +3239,7 @@
 		(pad "2" smd rect
 			(at 2.075 0)
 			(size 1.35 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "2")
 			(pintype "passive")
@@ -3377,7 +3248,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -3385,6 +3256,7 @@
 			)
 			(uuid "f9cfaa79-b275-46c1-ab0c-90e96aea3c72")
 		)
+		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/TS-1088-AR02016.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -3426,19 +3298,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2f924953-bb2b-47e9-b01b-08c227f063c6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -3466,7 +3325,7 @@
 			)
 		)
 		(property "LCSC" "C22966"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3480,7 +3339,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a3416fce-af4c-4e6a-bed6-97bd20569c4d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3597,7 +3456,7 @@
 		(pad "1" smd roundrect
 			(at -0.825 0 90)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 15 "Net-(U2-PB10)")
 			(pintype "passive")
@@ -3606,7 +3465,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -3617,7 +3476,7 @@
 		(pad "2" smd roundrect
 			(at 0.825 0 90)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 9 "/TX")
 			(pintype "passive")
@@ -3626,7 +3485,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -3634,6 +3493,7 @@
 			)
 			(uuid "6ffe069b-ec76-46f8-a0c6-e73f6e86c267")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3671,19 +3531,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "af077666-ce8f-4e36-9787-22b77c04c57d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3729,7 +3576,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/52d6dfa8-83c1-4fb0-a215-016b141b1a88")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3916,7 +3763,7 @@
 		(pad "1" smd roundrect
 			(at -1.05 0 180)
 			(size 0.6 0.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+5V")
 			(pinfunction "K")
@@ -3926,7 +3773,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -3937,7 +3784,7 @@
 		(pad "2" smd roundrect
 			(at 1.05 0 180)
 			(size 0.6 0.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 30 "Net-(D3-A)")
 			(pinfunction "A")
@@ -3947,7 +3794,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -3955,6 +3802,7 @@
 			)
 			(uuid "8e500637-da1f-48b8-bfb3-c5f41220264c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3992,19 +3840,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3f7344c5-3c93-4123-b596-4b06fda4d47e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4050,7 +3885,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/343fe2e0-a793-4d95-a1cb-3b3ababaf2ff")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4101,7 +3936,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "3e3d0a01-d350-437e-87f2-69bd553dc289")
 		)
@@ -4209,7 +4044,7 @@
 		(pad "1" smd roundrect
 			(at -0.9375 -0.95 180)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 38 "Net-(Q2-G)")
 			(pinfunction "G")
@@ -4219,7 +4054,7 @@
 		(pad "2" smd roundrect
 			(at -0.9375 0.95 180)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+5V")
 			(pinfunction "S")
@@ -4229,13 +4064,14 @@
 		(pad "3" smd roundrect
 			(at 0.9375 0 180)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 36 "/5V_OUT")
 			(pinfunction "D")
 			(pintype "passive")
 			(uuid "f353fbda-baca-4413-ac2f-ab2e12f18813")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4277,19 +4113,6 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ac944cef-40e9-4c00-89c3-efbffa6f9a0b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -4318,7 +4141,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/129d0eb6-024e-412c-8e59-39800951d950")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
@@ -4328,7 +4151,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "f3027494-3954-4e38-be73-009d371c0949")
 		)
@@ -4339,7 +4162,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "e89e1431-1dba-409f-b68c-2855f7b4629b")
 		)
@@ -4366,7 +4189,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -4374,6 +4197,7 @@
 			)
 			(uuid "71a0e301-eac2-41e9-8d73-cb60d44b14cb")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -4382,7 +4206,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R16"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a7b174e0-10d0-43bb-a71c-a321bd2fa029")
@@ -4394,25 +4218,12 @@
 			)
 		)
 		(property "Value" "330"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "31a504b2-efea-4cea-9480-00cb2e907c6c")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c01e1659-01b9-42a3-becf-bc2fdf64dbbd")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4458,7 +4269,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/c078accc-291b-4a2c-b046-e30a300de989")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4562,7 +4373,7 @@
 			(uuid "d226e792-8cd9-4904-8bdb-0fb671ce20a2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ba3359ca-7866-4093-a369-6f9706500de2")
 			(effects
@@ -4575,7 +4386,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 38 "Net-(Q2-G)")
 			(pintype "passive")
@@ -4584,12 +4395,13 @@
 		(pad "2" smd roundrect
 			(at 0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 31 "/PB12_5V")
 			(pintype "passive")
 			(uuid "0bfc6310-0040-4ac9-b9f3-58c11b3533dd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4627,19 +4439,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "88e6b5e1-8112-4948-aba6-470a1461ad28")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4685,7 +4484,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/065b5842-e38d-4fa3-9983-c3c99f06d1dd")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4802,7 +4601,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 5 "Net-(D2-K)")
 			(pintype "passive")
@@ -4811,7 +4610,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -4822,7 +4621,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -4831,7 +4630,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -4839,6 +4638,7 @@
 			)
 			(uuid "082f7357-e2a2-42ee-8c5f-5bc6668f84bc")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4876,19 +4676,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "af80cfaa-a992-496a-ad7a-d7b99db274ea")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4934,7 +4721,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/d24548c8-403c-4832-9107-7c935dea8c77")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5051,7 +4838,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "Net-(D1-K)")
 			(pintype "passive")
@@ -5060,7 +4847,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -5071,7 +4858,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 24 "Net-(U2-PA8{slash}PC9)")
 			(pintype "passive")
@@ -5080,7 +4867,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -5088,6 +4875,7 @@
 			)
 			(uuid "1d27fb20-0c83-49b8-bb00-e19098f4206f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5129,21 +4917,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "82e2715f-35d3-4c4e-aa9d-68bb0867c35d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5156,7 +4931,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5183,7 +4958,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a3f62d61-f860-44a4-a5c8-0a03ea15343b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5300,7 +5075,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "/D_SWDIO")
 			(pintype "passive")
@@ -5309,7 +5084,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -5320,7 +5095,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 12 "/SWDIO{slash}TMS")
 			(pintype "passive")
@@ -5329,7 +5104,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -5337,6 +5112,7 @@
 			)
 			(uuid "e5681d1b-d5c4-43c7-b03d-fa5ff8e35ffa")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5378,18 +5154,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tooling_Hole:Tooling_Hole"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a997de1c-839b-48f0-81e3-746ba87abfc7")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -5416,7 +5180,7 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/38d65097-74f6-4f7a-ba90-9b51251eb4e2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
@@ -5426,9 +5190,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "B.Mask")
-			(uuid "a7987f33-259a-4050-9c79-85682d0ff5d4")
+			(fill no)
+			(layer "F.Mask")
+			(uuid "885312ed-22b9-4128-86ac-d383e397e295")
 		)
 		(fp_circle
 			(center 0 0)
@@ -5437,9 +5201,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "F.Mask")
-			(uuid "885312ed-22b9-4128-86ac-d383e397e295")
+			(fill no)
+			(layer "B.Mask")
+			(uuid "a7987f33-259a-4050-9c79-85682d0ff5d4")
 		)
 		(fp_circle
 			(center 0 0)
@@ -5448,7 +5212,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "0a9bec11-20b2-453a-8bbf-c17972082655")
 		)
@@ -5468,9 +5232,10 @@
 			(at 0 0)
 			(size 1.152 1.152)
 			(drill 1.152)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2ab40793-f2bd-4da6-b3cc-95134e5eb209")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -5497,19 +5262,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2954a7ef-e1df-4a21-9c6a-53c080231541")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5541,7 +5293,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5555,7 +5307,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ecf37612-7493-4475-8679-3860e877bf1d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5672,7 +5424,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 90)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pintype "passive")
@@ -5681,7 +5433,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -5692,7 +5444,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 90)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 16 "/IAP")
 			(pintype "passive")
@@ -5701,7 +5453,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -5709,6 +5461,7 @@
 			)
 			(uuid "fc2ad51d-ba94-49a4-b761-34c880388c0f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5728,7 +5481,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R15"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b653da19-e00c-4aa4-bf8c-ae40e7c8c580")
@@ -5740,25 +5493,12 @@
 			)
 		)
 		(property "Value" "330"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "9fd8a072-bff0-493e-a714-98766478b9fb")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8ff07263-1aa7-4a2f-9726-25dae18d9e35")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5804,7 +5544,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/db42b398-baa9-45b3-8a0a-86fd7a9daa14")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5908,7 +5648,7 @@
 			(uuid "3fcbf0cc-ca5d-4a48-a140-79cb96477178")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "296c486e-94a3-4eae-a1ce-d3080f80de95")
 			(effects
@@ -5921,7 +5661,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 37 "Net-(Q1-G)")
 			(pintype "passive")
@@ -5930,12 +5670,13 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 32 "/PA5")
 			(pintype "passive")
 			(uuid "dea838bc-0c1d-4355-8742-21579f71d4a2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5977,18 +5718,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tooling_Hole:Tooling_Hole"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f7216532-3ca9-4040-b2e0-5e96c1798bc6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -6015,7 +5744,7 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/79008144-d19d-445f-8eca-06aa33fc84c3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
@@ -6025,9 +5754,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "B.Mask")
-			(uuid "1024d1b2-aa43-4d94-9f29-21b05a5008d1")
+			(fill no)
+			(layer "F.Mask")
+			(uuid "914b7e64-c71e-4ee3-b213-2cfe96ae05a8")
 		)
 		(fp_circle
 			(center 0 0)
@@ -6036,9 +5765,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "F.Mask")
-			(uuid "914b7e64-c71e-4ee3-b213-2cfe96ae05a8")
+			(fill no)
+			(layer "B.Mask")
+			(uuid "1024d1b2-aa43-4d94-9f29-21b05a5008d1")
 		)
 		(fp_circle
 			(center 0 0)
@@ -6047,7 +5776,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "002fe48c-54d6-4743-ab07-f9ed286a9dba")
 		)
@@ -6067,9 +5796,10 @@
 			(at 0 0)
 			(size 1.152 1.152)
 			(drill 1.152)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "27ca0c6b-8b2b-4d13-9233-3a59326fa9f9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -6096,19 +5826,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "58c83145-705d-449b-916c-7944d60f8b67")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6154,7 +5871,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/6385219b-72b2-49d7-be12-48405807ac6f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6205,7 +5922,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "61d895f5-3eb0-4c78-aaef-809062d8fe34")
 		)
@@ -6313,7 +6030,7 @@
 		(pad "1" smd roundrect
 			(at -0.9375 -0.95)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 37 "Net-(Q1-G)")
 			(pinfunction "G")
@@ -6323,7 +6040,7 @@
 		(pad "2" smd roundrect
 			(at -0.9375 0.95)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pinfunction "S")
@@ -6333,13 +6050,14 @@
 		(pad "3" smd roundrect
 			(at 0.9375 0)
 			(size 1.475 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 35 "/3V3_OUT")
 			(pinfunction "D")
 			(pintype "passive")
 			(uuid "eef8d282-f608-4372-af20-4c1db1edff34")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6377,19 +6095,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d03c13bb-d868-436d-a8d0-a6c3c87dab6a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6435,7 +6140,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0e42244f-fee8-4276-a32d-8aa2421468d1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6552,7 +6257,7 @@
 		(pad "1" smd roundrect
 			(at -0.48 0 90)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -6561,7 +6266,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6572,7 +6277,7 @@
 		(pad "2" smd roundrect
 			(at 0.48 0 90)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "/ModeS")
 			(pintype "passive")
@@ -6581,7 +6286,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6589,6 +6294,7 @@
 			)
 			(uuid "ae6a2a38-695f-4edc-aa02-2e04d5f2168f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6626,18 +6332,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c01319a1-8c3d-4e30-a5bb-d66888e8c210")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6681,7 +6375,7 @@
 		)
 		(property ki_fp_filters "TSSOP*4.4x6.5mm*P0.65mm*")
 		(path "/caeb5ca5-7375-4705-82dd-4d7297294ce7")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6732,7 +6426,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "d110ce2a-e22a-4ec5-bfe9-f1f5f2fe4f03")
 		)
@@ -6840,7 +6534,7 @@
 		(pad "1" smd roundrect
 			(at -2.8625 -2.925)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 25 "Net-(U2-~{RST})")
 			(pinfunction "~{RST}")
@@ -6850,7 +6544,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6861,7 +6555,7 @@
 		(pad "2" smd roundrect
 			(at -2.8625 -2.275)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 32 "/PA5")
 			(pinfunction "PA1/PA5")
@@ -6871,7 +6565,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6882,7 +6576,7 @@
 		(pad "3" smd roundrect
 			(at -2.8625 -1.625)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 15 "Net-(U2-PB10)")
 			(pinfunction "PB10")
@@ -6892,7 +6586,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6903,7 +6597,7 @@
 		(pad "4" smd roundrect
 			(at -2.8625 -0.975)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 14 "Net-(U2-PB11)")
 			(pinfunction "PB11")
@@ -6913,7 +6607,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6924,7 +6618,7 @@
 		(pad "5" smd roundrect
 			(at -2.8625 -0.325)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 33 "/PB12")
 			(pinfunction "PB12")
@@ -6934,7 +6628,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6945,7 +6639,7 @@
 		(pad "6" smd roundrect
 			(at -2.8625 0.325)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "/D_SWCLK")
 			(pinfunction "PB13")
@@ -6955,7 +6649,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6966,7 +6660,7 @@
 		(pad "7" smd roundrect
 			(at -2.8625 0.975)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 17 "Net-(U2-PB14)")
 			(pinfunction "PB14")
@@ -6976,7 +6670,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -6987,7 +6681,7 @@
 		(pad "8" smd roundrect
 			(at -2.8625 1.625)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 20 "Net-(U2-PB15)")
 			(pinfunction "PB15")
@@ -6997,7 +6691,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7008,7 +6702,7 @@
 		(pad "9" smd roundrect
 			(at -2.8625 2.275)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 19 "Net-(U2-PC6)")
 			(pinfunction "PC6")
@@ -7018,7 +6712,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7029,7 +6723,7 @@
 		(pad "10" smd roundrect
 			(at -2.8625 2.925)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 16 "/IAP")
 			(pinfunction "PC7")
@@ -7039,7 +6733,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7050,7 +6744,7 @@
 		(pad "11" smd roundrect
 			(at 2.8625 2.925)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 18 "/RST")
 			(pinfunction "PC8")
@@ -7060,7 +6754,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7071,7 +6765,7 @@
 		(pad "12" smd roundrect
 			(at 2.8625 2.275)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 24 "Net-(U2-PA8{slash}PC9)")
 			(pinfunction "PA8/PC9")
@@ -7081,7 +6775,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7092,7 +6786,7 @@
 		(pad "13" smd roundrect
 			(at 2.8625 1.625)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "/D_SWDIO")
 			(pinfunction "SWDIO")
@@ -7102,7 +6796,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7113,7 +6807,7 @@
 		(pad "14" smd roundrect
 			(at 2.8625 0.975)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pinfunction "VDD33")
@@ -7123,7 +6817,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7134,7 +6828,7 @@
 		(pad "15" smd roundrect
 			(at 2.8625 0.325)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "/D_SWCLK")
 			(pinfunction "SWCLK")
@@ -7144,7 +6838,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7155,7 +6849,7 @@
 		(pad "16" smd roundrect
 			(at 2.8625 -0.325)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 21 "/USB_N")
 			(pinfunction "PB6")
@@ -7165,7 +6859,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7176,7 +6870,7 @@
 		(pad "17" smd roundrect
 			(at 2.8625 -0.975)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 22 "/USB_P")
 			(pinfunction "PB7")
@@ -7186,7 +6880,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7197,7 +6891,7 @@
 		(pad "18" smd roundrect
 			(at 2.8625 -1.625)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pinfunction "VSS")
@@ -7207,7 +6901,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7218,7 +6912,7 @@
 		(pad "19" smd roundrect
 			(at 2.8625 -2.275)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 23 "Net-(U2-OSC_IN)")
 			(pinfunction "OSC_IN")
@@ -7228,7 +6922,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7239,7 +6933,7 @@
 		(pad "20" smd roundrect
 			(at 2.8625 -2.925)
 			(size 1.475 0.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "/ModeS")
 			(pinfunction "OSC_OUT")
@@ -7249,7 +6943,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7257,6 +6951,7 @@
 			)
 			(uuid "c2a4db72-b51f-4652-b594-3c72924e80d2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-20_4.4x6.5mm_P0.65mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7298,19 +6993,6 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "88bceb50-763e-4ae8-b9ec-262f6939f98a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -7324,7 +7006,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7350,9 +7032,22 @@
 				)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbaf6571-85ea-41e9-b14b-21db0600eb1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/5df71053-b999-41fd-8e05-ea664a391cc1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7489,7 +7184,7 @@
 		(pad "1" smd roundrect
 			(at -0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 5 "Net-(D2-K)")
 			(pinfunction "K")
@@ -7499,7 +7194,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7510,7 +7205,7 @@
 		(pad "2" smd roundrect
 			(at 0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pinfunction "A")
@@ -7520,7 +7215,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7528,6 +7223,7 @@
 			)
 			(uuid "9fa575ed-2636-4ce9-8406-73aba39c6727")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7569,18 +7265,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector:PinHeader_2x05_P2.54mm_Horizontal_SMD"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aef116d2-beba-4406-b1ae-06f4b0b8dde9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -7607,7 +7291,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/45ffbbd1-2977-4f02-affc-c29df2c31f58")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_rect
@@ -7617,7 +7301,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "3de3ad34-3374-4b1b-a410-8cc3fc241195")
 		)
@@ -7628,7 +7312,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "31509e5e-43c7-4e9e-a636-c67bb814b459")
 		)
@@ -7639,7 +7323,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "0bc99194-ce32-4b2d-9165-7868e9949a4e")
 		)
@@ -7650,7 +7334,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "43cd051b-a63c-4663-a839-dcc5c2294d8c")
 		)
@@ -7661,7 +7345,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "df619988-ed76-4ded-af9c-dab23d85b850")
 		)
@@ -7672,7 +7356,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "Dwgs.User")
 			(uuid "4f1c57cb-7c7c-4f7a-9e68-a3a65ecb62e0")
 		)
@@ -7702,7 +7386,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7724,7 +7408,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7746,7 +7430,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7768,7 +7452,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7790,7 +7474,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7812,7 +7496,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7834,7 +7518,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7856,7 +7540,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7878,7 +7562,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7900,7 +7584,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -7908,6 +7592,7 @@
 			)
 			(uuid "25fc87c0-ebe0-418d-ad11-2163ca6e309a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 2 -5.1 -2.1)
@@ -7949,21 +7634,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a388239b-5ab5-4be4-826f-477939812135")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7976,7 +7648,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7989,7 +7661,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8003,7 +7675,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/d34b0858-82ea-45c8-914b-17bec91d0fac")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8120,7 +7792,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 33 "/PB12")
 			(pintype "passive")
@@ -8129,7 +7801,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -8140,7 +7812,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pintype "passive")
@@ -8149,7 +7821,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -8157,6 +7829,7 @@
 			)
 			(uuid "f2f9f7d0-07ef-4351-a249-0a2059de624c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8198,18 +7871,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tooling_Hole:Tooling_Hole"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fd36dcd6-debc-440f-aaba-9beee5ca7f7f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -8236,7 +7897,7 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/5980a523-f363-4271-b87e-72e5abd2fe37")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
@@ -8246,9 +7907,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "B.Mask")
-			(uuid "935369a3-381e-4253-b61b-6999c13cf938")
+			(fill no)
+			(layer "F.Mask")
+			(uuid "64efe356-df8c-4ca9-aa5c-9242a5d04bb9")
 		)
 		(fp_circle
 			(center 0 0)
@@ -8257,9 +7918,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "F.Mask")
-			(uuid "64efe356-df8c-4ca9-aa5c-9242a5d04bb9")
+			(fill no)
+			(layer "B.Mask")
+			(uuid "935369a3-381e-4253-b61b-6999c13cf938")
 		)
 		(fp_circle
 			(center 0 0)
@@ -8268,7 +7929,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "ac425abf-81cf-46b6-be9b-513bcbcdc366")
 		)
@@ -8288,9 +7949,10 @@
 			(at 0 0)
 			(size 1.152 1.152)
 			(drill 1.152)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "bf68db72-343e-44f6-a3e8-961fe6c402c9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -8317,19 +7979,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2b2c6358-0905-4e3b-8922-b827f2df228f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8375,7 +8024,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/e1b1d309-353c-474c-b5a6-9bed33d5f06e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8492,7 +8141,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 20 "Net-(U2-PB15)")
 			(pintype "passive")
@@ -8501,7 +8150,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -8512,7 +8161,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 11 "/TDI")
 			(pintype "passive")
@@ -8521,7 +8170,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -8529,6 +8178,7 @@
 			)
 			(uuid "8e3f80c9-9a35-49e6-80cc-b64b8dd88f4a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8570,19 +8220,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e1581e3f-1135-4ccc-bf10-ef1271c2bd1a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -8610,7 +8247,7 @@
 			)
 		)
 		(property "LCSC" "C22966"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8624,7 +8261,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/02df0d32-3f67-4cb0-80e6-2d8baeeb0e53")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8741,7 +8378,7 @@
 		(pad "1" smd roundrect
 			(at -0.825 0 90)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 14 "Net-(U2-PB11)")
 			(pintype "passive")
@@ -8750,7 +8387,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -8761,7 +8398,7 @@
 		(pad "2" smd roundrect
 			(at 0.825 0 90)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 8 "/RX")
 			(pintype "passive")
@@ -8770,7 +8407,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -8778,6 +8415,7 @@
 			)
 			(uuid "5e21c166-8702-48e7-a3e9-1b6227c22f56")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8819,21 +8457,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "adcb31a4-eebf-47ae-b702-f33e48b26593")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8846,7 +8471,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8859,7 +8484,7 @@
 			)
 		)
 		(property "LCSC" "C1555"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8873,7 +8498,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/179175e9-3824-4fbd-acf4-659f1eb1bc75")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8990,7 +8615,7 @@
 		(pad "1" smd roundrect
 			(at -0.48 0 270)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -8999,7 +8624,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9010,7 +8635,7 @@
 		(pad "2" smd roundrect
 			(at 0.48 0 270)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 23 "Net-(U2-OSC_IN)")
 			(pintype "passive")
@@ -9019,7 +8644,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9027,6 +8652,7 @@
 			)
 			(uuid "428f7bfb-0f53-43c0-9cc6-e01ad5aca63d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9064,19 +8690,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7276f4db-db6b-40aa-9af5-76a4b8455e89")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9122,7 +8735,7 @@
 		)
 		(property ki_fp_filters "Crystal*")
 		(path "/8050e8ba-0081-464f-bb13-0f4c5588a6dc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9249,7 +8862,7 @@
 		(pad "1" smd rect
 			(at -1.1 0.85)
 			(size 1.4 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 23 "Net-(U2-OSC_IN)")
 			(pinfunction "1")
 			(pintype "passive")
@@ -9258,7 +8871,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9269,7 +8882,7 @@
 		(pad "2" smd rect
 			(at 1.1 0.85)
 			(size 1.4 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "2")
 			(pintype "passive")
@@ -9278,7 +8891,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9289,7 +8902,7 @@
 		(pad "3" smd rect
 			(at 1.1 -0.85)
 			(size 1.4 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "/ModeS")
 			(pinfunction "3")
 			(pintype "passive")
@@ -9298,7 +8911,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9309,7 +8922,7 @@
 		(pad "4" smd rect
 			(at -1.1 -0.85)
 			(size 1.4 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "4")
 			(pintype "passive")
@@ -9318,7 +8931,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9326,6 +8939,7 @@
 			)
 			(uuid "c3a14739-754e-48ec-ae6d-71f8a2b8a317")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9363,19 +8977,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Switch:TS-1088-AR02016"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ba1efaf0-d511-4b99-a938-0054934181d4")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9420,7 +9021,7 @@
 			)
 		)
 		(path "/3b4efb70-d10a-4040-93bf-b74b516c832a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9570,7 +9171,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "99b8cf10-cc7d-4027-bbb8-82f045eb87aa")
 		)
@@ -9588,7 +9189,7 @@
 		(pad "1" smd rect
 			(at -2.075 0 180)
 			(size 1.35 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "/ModeS")
 			(pinfunction "1")
 			(pintype "passive")
@@ -9597,7 +9198,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9608,7 +9209,7 @@
 		(pad "2" smd rect
 			(at 2.075 0 180)
 			(size 1.35 1.8)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "GND")
 			(pinfunction "2")
 			(pintype "passive")
@@ -9617,7 +9218,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9625,6 +9226,7 @@
 			)
 			(uuid "70a7a9a7-2dbf-44ba-a0db-9217786c3992")
 		)
+		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/TS-1088-AR02016.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -9666,18 +9268,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tooling_Hole:Tooling_Hole"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "953cf954-e337-44ec-b9e0-0fb4d20e92e9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -9704,7 +9294,7 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/d52a3d24-e501-49ad-970a-7f70e9edcec9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
@@ -9714,9 +9304,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "B.Mask")
-			(uuid "6542f448-4e4d-4df9-a9a0-7634ece61c64")
+			(fill no)
+			(layer "F.Mask")
+			(uuid "48dc774c-d916-4187-86e5-c2bd0b8c7788")
 		)
 		(fp_circle
 			(center 0 0)
@@ -9725,9 +9315,9 @@
 				(width 0.074)
 				(type solid)
 			)
-			(fill none)
-			(layer "F.Mask")
-			(uuid "48dc774c-d916-4187-86e5-c2bd0b8c7788")
+			(fill no)
+			(layer "B.Mask")
+			(uuid "6542f448-4e4d-4df9-a9a0-7634ece61c64")
 		)
 		(fp_circle
 			(center 0 0)
@@ -9736,7 +9326,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "d873402e-b363-400c-b82b-cba253d46331")
 		)
@@ -9756,9 +9346,10 @@
 			(at 0 0)
 			(size 1.152 1.152)
 			(drill 1.152)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "1e84eec2-93e5-4f04-ad82-80bdb5f73403")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -9785,19 +9376,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d7bf945b-8b0d-4aca-83b2-aee18f0036f6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9843,7 +9421,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/cc09bf74-4464-41d2-beb5-0a589e400381")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9960,7 +9538,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "/D_SWCLK")
 			(pintype "passive")
@@ -9969,7 +9547,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9980,7 +9558,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 180)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 13 "/SWCLK{slash}TCK")
 			(pintype "passive")
@@ -9989,7 +9567,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -9997,6 +9575,7 @@
 			)
 			(uuid "3005ea00-7fc1-44dd-bf98-3bd49393d189")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10038,19 +9617,6 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b23846d6-b474-4c91-b3dd-f5b584e99eff")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -10064,7 +9630,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10090,9 +9656,22 @@
 				)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c82d259-8dd2-4bb0-a830-7f04f8ed16e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/cf719a74-83a7-4614-9fa2-1a0ee8aa7b21")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10229,7 +9808,7 @@
 		(pad "1" smd roundrect
 			(at -0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "Net-(D1-K)")
 			(pinfunction "K")
@@ -10239,7 +9818,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -10250,7 +9829,7 @@
 		(pad "2" smd roundrect
 			(at 0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+3V3")
 			(pinfunction "A")
@@ -10260,7 +9839,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -10268,6 +9847,7 @@
 			)
 			(uuid "4be4b015-33f6-487f-9f8a-c144b398dc74")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10309,21 +9889,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "091c71ca-078b-462d-83ba-be5f2d84fe25")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10336,7 +9903,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10349,7 +9916,7 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10363,7 +9930,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/4d820dec-01a9-4d34-955a-380457769352")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10480,7 +10047,7 @@
 		(pad "1" smd roundrect
 			(at -0.48 0 270)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+5V")
 			(pintype "passive")
@@ -10489,7 +10056,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -10500,7 +10067,7 @@
 		(pad "2" smd roundrect
 			(at 0.48 0 270)
 			(size 0.56 0.62)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -10509,7 +10076,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -10517,6 +10084,7 @@
 			)
 			(uuid "31744fd9-2dd8-48bb-84ef-37b502ccb430")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10558,21 +10126,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "16a06655-5f47-4c97-bcb5-5f015804d551")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10585,7 +10140,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10598,7 +10153,7 @@
 			)
 		)
 		(property "LCSC" "C25905"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10612,7 +10167,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/23ed659b-0c67-486b-bf97-251aa0c96257")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10729,7 +10284,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 34 "GND")
 			(pintype "passive")
@@ -10738,7 +10293,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -10749,7 +10304,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0 270)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 29 "Net-(J1-CC1)")
 			(pintype "passive")
@@ -10758,7 +10313,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -10766,6 +10321,7 @@
 			)
 			(uuid "13155df1-73e1-4e44-8878-edfbefa2a672")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10803,19 +10359,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "213fd365-d629-4ecd-934b-67e92b9736c6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10861,7 +10404,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/19cdcf9c-4fc9-45e6-a5c2-677883a4f4a1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "WCH-LinkE-Mini.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10978,7 +10521,7 @@
 		(pad "1" smd roundrect
 			(at -0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+5V")
 			(pintype "passive")
@@ -10987,7 +10530,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -10998,7 +10541,7 @@
 		(pad "2" smd roundrect
 			(at 0.51 0)
 			(size 0.54 0.64)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 31 "/PB12_5V")
 			(pintype "passive")
@@ -11007,7 +10550,7 @@
 				(max_length 1)
 				(best_width_ratio 1)
 				(max_width 2)
-				(curve_points 0)
+				(curved_edges no)
 				(filter_ratio 0.9)
 				(enabled yes)
 				(allow_two_segments yes)
@@ -11015,6 +10558,7 @@
 			)
 			(uuid "7be2f8ff-1c38-410f-8157-65c00d8bcd5a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11110,83 +10654,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "f1aed402-4a5b-479a-8b55-4f2781ee9498")
-	)
-	(gr_text "5V"
-		(at 160.147 124.46 0)
-		(layer "B.SilkS" knockout)
-		(uuid "199aec79-4ea0-42ff-9a8d-1135081e165a")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify left mirror)
-		)
-	)
-	(gr_text "SWDIO/TMS"
-		(at 160.147 116.84 0)
-		(layer "B.SilkS" knockout)
-		(uuid "342d93fc-8be9-422c-920f-3e52488863f7")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify left mirror)
-		)
-	)
-	(gr_text "GND"
-		(at 160.147 119.38 0)
-		(layer "B.SilkS" knockout)
-		(uuid "7b2b87e3-60de-4483-89ba-0990a1ae4bba")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify left mirror)
-		)
-	)
-	(gr_text "WCH-LinkE-Mini\nv1.3.0"
-		(at 130.175 119.38 270)
-		(layer "B.SilkS")
-		(uuid "80a8d655-b8dd-49b0-a111-e39791f824a8")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-			)
-			(justify bottom mirror)
-		)
-	)
-	(gr_text "3V3"
-		(at 160.147 121.92 0)
-		(layer "B.SilkS" knockout)
-		(uuid "f1f7ccf7-8d35-4655-8b62-d628d05b3585")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify left mirror)
-		)
-	)
-	(gr_text "SWCLK/TCK"
-		(at 160.147 114.3 0)
-		(layer "B.SilkS" knockout)
-		(uuid "f33f8b24-8c52-492b-8a63-6510357a8b85")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-				(bold yes)
-			)
-			(justify left mirror)
-		)
 	)
 	(gr_text "CON"
 		(at 152.527 121.539 0)
@@ -11317,6 +10784,83 @@
 			(justify right)
 		)
 	)
+	(gr_text "5V"
+		(at 160.147 124.46 0)
+		(layer "B.SilkS" knockout)
+		(uuid "199aec79-4ea0-42ff-9a8d-1135081e165a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(gr_text "SWDIO/TMS"
+		(at 160.147 116.84 0)
+		(layer "B.SilkS" knockout)
+		(uuid "342d93fc-8be9-422c-920f-3e52488863f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(gr_text "GND"
+		(at 160.147 119.38 0)
+		(layer "B.SilkS" knockout)
+		(uuid "7b2b87e3-60de-4483-89ba-0990a1ae4bba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(gr_text "WCH-LinkE-Mini\nv1.3.0"
+		(at 130.175 119.38 270)
+		(layer "B.SilkS")
+		(uuid "80a8d655-b8dd-49b0-a111-e39791f824a8")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify bottom mirror)
+		)
+	)
+	(gr_text "3V3"
+		(at 160.147 121.92 0)
+		(layer "B.SilkS" knockout)
+		(uuid "f1f7ccf7-8d35-4655-8b62-d628d05b3585")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(gr_text "SWCLK/TCK"
+		(at 160.147 114.3 0)
+		(layer "B.SilkS" knockout)
+		(uuid "f33f8b24-8c52-492b-8a63-6510357a8b85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
 	(dimension
 		(type aligned)
 		(layer "Dwgs.User")
@@ -11325,6 +10869,22 @@
 			(xy 127 127) (xy 165.1 127)
 		)
 		(height 2.413)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 2)
+		)
+		(style
+			(thickness 0.15)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "38.10 mm"
 			(at 146.05 128.263 0)
 			(layer "Dwgs.User")
@@ -11336,6 +10896,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "8c16f0d3-40c0-461d-81f9-745250fa4c03")
+		(pts
+			(xy 127 111.76) (xy 127 127)
+		)
+		(height 2.921)
 		(format
 			(prefix "")
 			(suffix "")
@@ -11347,17 +10916,11 @@
 			(thickness 0.15)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Dwgs.User")
-		(uuid "8c16f0d3-40c0-461d-81f9-745250fa4c03")
-		(pts
-			(xy 127 111.76) (xy 127 127)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 2.921)
 		(gr_text "15.24 mm"
 			(at 122.929 119.38 90)
 			(layer "Dwgs.User")
@@ -11369,19 +10932,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 2)
-		)
-		(style
-			(thickness 0.15)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
 		(start 151.722 115.863)
@@ -11705,7 +11255,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -11724,7 +11274,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12175,7 +11725,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12194,7 +11744,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12285,7 +11835,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12304,7 +11854,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12379,7 +11929,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12398,7 +11948,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12513,7 +12063,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12532,7 +12082,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12599,7 +12149,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12698,7 +12248,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12797,7 +12347,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -12816,7 +12366,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13123,7 +12673,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13142,7 +12692,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13249,7 +12799,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13268,7 +12818,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13399,7 +12949,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13418,7 +12968,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13861,7 +13411,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -13880,7 +13430,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -14227,7 +13777,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -14246,7 +13796,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -14377,7 +13927,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -14420,7 +13970,7 @@
 			(max_length 1)
 			(best_width_ratio 1)
 			(max_width 2)
-			(curve_points 0)
+			(curved_edges no)
 			(filter_ratio 0.9)
 			(enabled yes)
 			(allow_two_segments yes)
@@ -14874,46 +14424,6 @@
 		)
 	)
 	(zone
-		(net 21)
-		(net_name "/USB_N")
-		(layer "F.Cu")
-		(uuid "145fea6a-6b11-4c1b-8fcd-97b86bf598d2")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30113)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 135.497308 119.662668) (xy 135.320532 119.485892) (xy 135.282 119.48) (xy 134.661293 119.630707)
-				(xy 135.282 119.734286)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 135.31674 119.485312) (xy 135.323245 119.488605) (xy 135.483912 119.649272) (xy 135.487339 119.657545)
-				(xy 135.483912 119.665818) (xy 135.479332 119.668647) (xy 135.284754 119.733369) (xy 135.279135 119.733807)
-				(xy 134.71771 119.640121) (xy 134.710114 119.63538) (xy 134.708096 119.626655) (xy 134.712837 119.619059)
-				(xy 134.716871 119.617212) (xy 135.279755 119.480544) (xy 135.284282 119.480349)
-			)
-		)
-	)
-	(zone
 		(net 16)
 		(net_name "/IAP")
 		(layer "F.Cu")
@@ -15237,46 +14747,6 @@
 		)
 	)
 	(zone
-		(net 21)
-		(net_name "/USB_N")
-		(layer "F.Cu")
-		(uuid "22998b7b-1786-4aa8-bcd2-3ce8ca6ae602")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30109)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 133.892 118.505) (xy 133.892 118.755) (xy 134.042 118.78) (xy 134.663 118.63) (xy 134.042 118.48)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 134.044313 118.480558) (xy 134.517276 118.594801) (xy 134.615915 118.618627) (xy 134.623152 118.623901)
-				(xy 134.624541 118.632747) (xy 134.619267 118.639984) (xy 134.615915 118.641373) (xy 134.044318 118.77944)
-				(xy 134.039647 118.779607) (xy 133.99369 118.771948) (xy 133.901776 118.756629) (xy 133.894179 118.751888)
-				(xy 133.892 118.745088) (xy 133.892 118.514911) (xy 133.895427 118.506638) (xy 133.901774 118.50337)
-				(xy 134.039652 118.480391)
-			)
-		)
-	)
-	(zone
 		(net 15)
 		(net_name "Net-(U2-PB10)")
 		(layer "F.Cu")
@@ -15475,6 +14945,42 @@
 		)
 	)
 	(zone
+		(net 29)
+		(net_name "Net-(J1-CC1)")
+		(layer "F.Cu")
+		(uuid "2dc1efcf-5ec0-437f-b60e-82c94c783adb")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30015)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 133.892 118.005) (xy 133.892 118.255) (xy 134.042 118.28) (xy 134.663 118.13) (xy 134.042 117.98)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 133.892 118.005) (xy 133.892 118.255) (xy 134.042 118.28) (xy 134.663 118.13) (xy 134.042 117.98)
+			)
+		)
+	)
+	(zone
 		(net 8)
 		(net_name "/RX")
 		(layer "F.Cu")
@@ -15554,6 +15060,42 @@
 		)
 	)
 	(zone
+		(net 30)
+		(net_name "Net-(D3-A)")
+		(layer "F.Cu")
+		(uuid "39832a1e-6da1-46d9-b94b-b2f9fe32070e")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30007)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 133.742 116.965) (xy 133.742 117.215) (xy 134.042 117.28) (xy 134.663 116.98) (xy 134.042 116.752037)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 133.742 116.965) (xy 133.742 117.215) (xy 134.042 117.28) (xy 134.663 116.98) (xy 134.042 116.752037)
+			)
+		)
+	)
+	(zone
 		(net 15)
 		(net_name "Net-(U2-PB10)")
 		(layer "F.Cu")
@@ -15628,6 +15170,42 @@
 				(xy 149.513 121.656632) (xy 149.509573 121.664905) (xy 149.506357 121.667183) (xy 149.218421 121.805178)
 				(xy 149.209479 121.805663) (xy 149.204595 121.802372) (xy 148.978838 121.546743) (xy 148.975931 121.538275)
 				(xy 148.978838 121.531256) (xy 149.204596 121.275625) (xy 149.212639 121.271694)
+			)
+		)
+	)
+	(zone
+		(net 22)
+		(net_name "/USB_P")
+		(layer "F.Cu")
+		(uuid "42bf0fb9-b94e-41f1-82e9-d5a420e65ec0")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30012)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 133.892 119.005) (xy 133.892 119.255) (xy 134.042 119.28) (xy 134.663 119.13) (xy 134.042 118.98)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 133.892 119.005) (xy 133.892 119.255) (xy 134.042 119.28) (xy 134.663 119.13) (xy 134.042 118.98)
 			)
 		)
 	)
@@ -15753,45 +15331,6 @@
 		)
 	)
 	(zone
-		(net 30)
-		(net_name "Net-(D3-A)")
-		(layer "F.Cu")
-		(uuid "4a7b8f73-24a5-4011-b7f4-51f714250511")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30053)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 133.742 121.545) (xy 133.742 121.795) (xy 134.042 122.007962) (xy 134.663 121.78) (xy 134.042 121.48)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 134.045628 121.481752) (xy 134.178957 121.546163) (xy 134.638146 121.767993) (xy 134.644105 121.774677)
-				(xy 134.643592 121.783617) (xy 134.637089 121.789511) (xy 134.047783 122.005839) (xy 134.038836 122.005473)
-				(xy 134.036978 122.004397) (xy 133.746927 121.798497) (xy 133.742165 121.790913) (xy 133.742 121.788956)
-				(xy 133.742 121.554436) (xy 133.745427 121.546163) (xy 133.75122 121.543002) (xy 134.038063 121.480853)
-			)
-		)
-	)
-	(zone
 		(net 3)
 		(net_name "+5V")
 		(layer "F.Cu")
@@ -15831,6 +15370,44 @@
 		)
 	)
 	(zone
+		(net 21)
+		(net_name "/USB_N")
+		(layer "F.Cu")
+		(uuid "4bcab3b7-94a2-43ff-beda-dc0f69999ee6")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30010)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 135.31444 118.788816) (xy 135.491216 118.61204) (xy 135.282 118.538147) (xy 134.661293 118.629293)
+				(xy 134.661481 118.78)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 135.31444 118.788816) (xy 135.491216 118.61204) (xy 135.282 118.538147) (xy 134.661293 118.629293)
+				(xy 134.661481 118.78)
+			)
+		)
+	)
+	(zone
 		(net 2)
 		(net_name "+3V3")
 		(layer "F.Cu")
@@ -15866,6 +15443,44 @@
 				(xy 146.336408 120.36522) (xy 146.333911 120.366254) (xy 145.699778 120.546521) (xy 145.693662 120.546597)
 				(xy 145.443783 120.482261) (xy 145.436625 120.47688) (xy 145.435 120.470931) (xy 145.435 120.239068)
 				(xy 145.438427 120.230795) (xy 145.44378 120.227739) (xy 145.693663 120.163402)
+			)
+		)
+	)
+	(zone
+		(net 2)
+		(net_name "+3V3")
+		(layer "F.Cu")
+		(uuid "4da285d9-4c9e-434d-8d06-fb7f1e61bf0b")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30005)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 151.52378 122.289243) (xy 151.700557 122.46602) (xy 152.148552 121.960205) (xy 151.791207 121.538293)
+				(xy 151.369651 121.878962)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 151.52378 122.289243) (xy 151.700557 122.46602) (xy 152.148552 121.960205) (xy 151.791207 121.538293)
+				(xy 151.369651 121.878962)
 			)
 		)
 	)
@@ -15945,46 +15560,6 @@
 				(xy 135.384872 125.804468) (xy 135.378723 125.810978) (xy 135.37394 125.812) (xy 135.14006 125.812)
 				(xy 135.131787 125.808573) (xy 135.129128 125.804468) (xy 135.000109 125.466093) (xy 135.000363 125.457142)
 				(xy 135.003143 125.453293) (xy 135.249102 125.228227) (xy 135.257518 125.22517)
-			)
-		)
-	)
-	(zone
-		(net 22)
-		(net_name "/USB_P")
-		(layer "F.Cu")
-		(uuid "586405d6-2bc3-449f-89c0-7fe93c0b87c0")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30106)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 133.892 120.005) (xy 133.892 120.255) (xy 134.042 120.28) (xy 134.663 120.13) (xy 134.042 119.98)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 134.044313 119.980558) (xy 134.517276 120.094801) (xy 134.615915 120.118627) (xy 134.623152 120.123901)
-				(xy 134.624541 120.132747) (xy 134.619267 120.139984) (xy 134.615915 120.141373) (xy 134.044318 120.27944)
-				(xy 134.039647 120.279607) (xy 133.99369 120.271948) (xy 133.901776 120.256629) (xy 133.894179 120.251888)
-				(xy 133.892 120.245088) (xy 133.892 120.014911) (xy 133.895427 120.006638) (xy 133.901774 120.00337)
-				(xy 134.039652 119.980391)
 			)
 		)
 	)
@@ -16071,10 +15646,10 @@
 		(net 2)
 		(net_name "+3V3")
 		(layer "F.Cu")
-		(uuid "5c647665-5880-415f-8b91-ee54fc4c22c8")
+		(uuid "5fac46d9-e8eb-4a95-b0ed-b2f4197d6f2f")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
-		(priority 30019)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -16093,27 +15668,24 @@
 		)
 		(polygon
 			(pts
-				(xy 151.9155 120.6265) (xy 151.6655 120.6265) (xy 151.369651 121.199038) (xy 151.7905 121.54) (xy 152.211349 121.199038)
+				(xy 151.6655 120.8005) (xy 151.9155 120.8005) (xy 152.211349 120.227962) (xy 151.7905 119.887) (xy 151.369651 120.227962)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 151.916649 120.629927) (xy 151.91877 120.632829) (xy 152.206975 121.190573) (xy 152.207729 121.199496)
-				(xy 152.203946 121.205035) (xy 151.797865 121.534033) (xy 151.78928 121.536578) (xy 151.783135 121.534033)
-				(xy 151.377053 121.205035) (xy 151.372782 121.197164) (xy 151.374023 121.190576) (xy 151.66223 120.632829)
-				(xy 151.669072 120.627052) (xy 151.672624 120.6265) (xy 151.908376 120.6265)
+				(xy 151.6655 120.8005) (xy 151.9155 120.8005) (xy 152.211349 120.227962) (xy 151.7905 119.887) (xy 151.369651 120.227962)
 			)
 		)
 	)
 	(zone
-		(net 21)
-		(net_name "/USB_N")
+		(net 30)
+		(net_name "Net-(D3-A)")
 		(layer "F.Cu")
-		(uuid "5d21e493-c20c-4419-8344-0cc86a4f4736")
+		(uuid "60332622-c685-492a-831b-94d1e61e6248")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
-		(priority 30104)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -16132,17 +15704,13 @@
 		)
 		(polygon
 			(pts
-				(xy 135.31444 118.788816) (xy 135.491216 118.61204) (xy 135.282 118.538147) (xy 134.661293 118.629293)
-				(xy 134.661481 118.78)
+				(xy 133.742 121.545) (xy 133.742 121.795) (xy 134.042 122.007962) (xy 134.663 121.78) (xy 134.042 121.48)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 135.284728 118.53911) (xy 135.473716 118.605859) (xy 135.480375 118.611844) (xy 135.480851 118.620786)
-				(xy 135.478092 118.625163) (xy 135.317932 118.785323) (xy 135.309659 118.78875) (xy 135.309501 118.788749)
-				(xy 134.673008 118.780155) (xy 134.664782 118.776617) (xy 134.661466 118.768472) (xy 134.661305 118.639411)
-				(xy 134.664722 118.631135) (xy 134.671302 118.627823) (xy 135.279137 118.538567)
+				(xy 133.742 121.545) (xy 133.742 121.795) (xy 134.042 122.007962) (xy 134.663 121.78) (xy 134.042 121.48)
 			)
 		)
 	)
@@ -16228,45 +15796,6 @@
 		)
 	)
 	(zone
-		(net 30)
-		(net_name "Net-(D3-A)")
-		(layer "F.Cu")
-		(uuid "6261ce59-17dc-47b4-a9f1-0af2c69de82e")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30051)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 133.742 116.965) (xy 133.742 117.215) (xy 134.042 117.28) (xy 134.663 116.98) (xy 134.042 116.752037)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 134.047774 116.754156) (xy 134.637089 116.970488) (xy 134.643674 116.976556) (xy 134.64404 116.985503)
-				(xy 134.638146 116.992006) (xy 134.045629 117.278246) (xy 134.038063 117.279146) (xy 133.751223 117.216998)
-				(xy 133.743863 117.211897) (xy 133.742 117.205563) (xy 133.742 116.971043) (xy 133.745427 116.96277)
-				(xy 133.746923 116.961504) (xy 134.03698 116.7556) (xy 134.045708 116.753607)
-			)
-		)
-	)
-	(zone
 		(net 18)
 		(net_name "/RST")
 		(layer "F.Cu")
@@ -16302,45 +15831,6 @@
 				(xy 162.517529 124.471322) (xy 160.718806 124.939803) (xy 160.710266 124.938759) (xy 160.066109 124.588323)
 				(xy 160.060479 124.581359) (xy 160.06 124.578045) (xy 160.06 124.341954) (xy 160.063427 124.333681)
 				(xy 160.066106 124.331678) (xy 160.710266 123.981239) (xy 160.718806 123.980196)
-			)
-		)
-	)
-	(zone
-		(net 2)
-		(net_name "+3V3")
-		(layer "F.Cu")
-		(uuid "66721e64-d7c5-42c5-be79-5e4995a11b96")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30018)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 151.6655 120.8005) (xy 151.9155 120.8005) (xy 152.211349 120.227962) (xy 151.7905 119.887) (xy 151.369651 120.227962)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 151.797862 119.892965) (xy 152.203946 120.221964) (xy 152.208217 120.229835) (xy 152.206975 120.236426)
-				(xy 151.91877 120.794171) (xy 151.911928 120.799948) (xy 151.908376 120.8005) (xy 151.672624 120.8005)
-				(xy 151.664351 120.797073) (xy 151.66223 120.794171) (xy 151.549635 120.576274) (xy 151.374023 120.236424)
-				(xy 151.37327 120.227503) (xy 151.377051 120.221966) (xy 151.783136 119.892965) (xy 151.79172 119.890421)
 			)
 		)
 	)
@@ -16381,45 +15871,6 @@
 				(xy 145.821113 118.532706) (xy 145.197441 118.746005) (xy 145.188504 118.74544) (xy 145.182856 118.739437)
 				(xy 145.165447 118.697681) (xy 145.034875 118.384499) (xy 145.034855 118.37555) (xy 145.182559 118.021273)
 				(xy 145.188905 118.014957)
-			)
-		)
-	)
-	(zone
-		(net 5)
-		(net_name "Net-(D2-K)")
-		(layer "F.Cu")
-		(uuid "687f4950-f74a-42d8-b433-2531cdbd7af8")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30021)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 149.3405 119.763) (xy 149.3405 120.013) (xy 149.881835 120.3255) (xy 150.2165 119.888) (xy 149.881835 119.4505)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 149.888077 119.458661) (xy 150.211061 119.880891) (xy 150.213366 119.889545) (xy 150.211061 119.895109)
-				(xy 149.888077 120.317338) (xy 149.880329 120.321827) (xy 149.872935 120.320362) (xy 149.346351 120.016377)
-				(xy 149.340899 120.009273) (xy 149.3405 120.006244) (xy 149.3405 119.769755) (xy 149.343927 119.761482)
-				(xy 149.346349 119.759623) (xy 149.872936 119.455636) (xy 149.881813 119.454469)
 			)
 		)
 	)
@@ -16537,6 +15988,42 @@
 				(xy 146.336408 118.41522) (xy 146.333911 118.416254) (xy 145.699778 118.596521) (xy 145.693662 118.596597)
 				(xy 145.443783 118.532261) (xy 145.436625 118.52688) (xy 145.435 118.520931) (xy 145.435 118.289068)
 				(xy 145.438427 118.280795) (xy 145.44378 118.277739) (xy 145.693663 118.213402)
+			)
+		)
+	)
+	(zone
+		(net 4)
+		(net_name "Net-(D1-K)")
+		(layer "F.Cu")
+		(uuid "6e1f855e-14a8-49e9-901d-7ec5e5d086e2")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30003)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 149.3405 121.414) (xy 149.3405 121.664) (xy 149.881835 121.9765) (xy 150.2165 121.539) (xy 149.881835 121.1015)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 149.3405 121.414) (xy 149.3405 121.664) (xy 149.881835 121.9765) (xy 150.2165 121.539) (xy 149.881835 121.1015)
 			)
 		)
 	)
@@ -16659,46 +16146,6 @@
 		)
 	)
 	(zone
-		(net 2)
-		(net_name "+3V3")
-		(layer "F.Cu")
-		(uuid "77cbb83a-6eec-4a4b-bf29-6ccd18d7c924")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30012)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 151.18108 120.752803) (xy 151.004303 120.92958) (xy 151.353 121.720218) (xy 151.791207 121.539707)
-				(xy 151.934218 121.064)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 151.188295 120.755784) (xy 151.924434 121.059957) (xy 151.930771 121.066282) (xy 151.93117 121.074137)
-				(xy 151.792809 121.534377) (xy 151.787145 121.541314) (xy 151.78606 121.541827) (xy 151.363554 121.71587)
-				(xy 151.3546 121.715853) (xy 151.348393 121.709773) (xy 151.274323 121.541827) (xy 151.007534 120.936908)
-				(xy 151.007332 120.927957) (xy 151.009965 120.923917) (xy 151.175558 120.758324) (xy 151.18383 120.754898)
-			)
-		)
-	)
-	(zone
 		(net 1)
 		(net_name "/ModeS")
 		(layer "F.Cu")
@@ -16735,45 +16182,6 @@
 				(xy 152.801393 116.272487) (xy 152.798356 116.274677) (xy 152.42895 116.459521) (xy 152.420018 116.460159)
 				(xy 152.416099 116.457941) (xy 151.733506 115.872763) (xy 151.729455 115.864776) (xy 151.732238 115.856265)
 				(xy 151.735013 115.853901) (xy 152.413393 115.438988) (xy 152.422239 115.437596)
-			)
-		)
-	)
-	(zone
-		(net 30)
-		(net_name "Net-(D3-A)")
-		(layer "F.Cu")
-		(uuid "7a350b74-2342-41b6-bd27-81d47b6a6943")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30050)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 133.742 116.965) (xy 133.742 117.215) (xy 134.042 117.28) (xy 134.663 116.98) (xy 134.042 116.752037)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 134.047774 116.754156) (xy 134.637089 116.970488) (xy 134.643674 116.976556) (xy 134.64404 116.985503)
-				(xy 134.638146 116.992006) (xy 134.045629 117.278246) (xy 134.038063 117.279146) (xy 133.751223 117.216998)
-				(xy 133.743863 117.211897) (xy 133.742 117.205563) (xy 133.742 116.971043) (xy 133.745427 116.96277)
-				(xy 133.746923 116.961504) (xy 134.03698 116.7556) (xy 134.045708 116.753607)
 			)
 		)
 	)
@@ -16893,87 +16301,6 @@
 				(xy 162.517529 121.931322) (xy 160.718806 122.399803) (xy 160.710266 122.398759) (xy 160.066109 122.048323)
 				(xy 160.060479 122.041359) (xy 160.06 122.038045) (xy 160.06 121.801954) (xy 160.063427 121.793681)
 				(xy 160.066106 121.791678) (xy 160.710266 121.441239) (xy 160.718806 121.440196)
-			)
-		)
-	)
-	(zone
-		(net 2)
-		(net_name "+3V3")
-		(layer "F.Cu")
-		(uuid "80962faa-106f-4d0b-99f3-02757b5f77f7")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30023)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 151.52378 122.289243) (xy 151.700557 122.46602) (xy 152.148552 121.960205) (xy 151.791207 121.538293)
-				(xy 151.369651 121.878962)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 151.798595 121.547016) (xy 152.075245 121.873653) (xy 152.142002 121.952471) (xy 152.144734 121.960999)
-				(xy 152.141833 121.96779) (xy 151.708799 122.456714) (xy 151.700748 122.460636) (xy 151.692283 122.457716)
-				(xy 151.691767 122.45723) (xy 151.52557 122.291033) (xy 151.52289 122.286875) (xy 151.400469 121.960999)
-				(xy 151.372621 121.886867) (xy 151.37292 121.877918) (xy 151.376219 121.873654) (xy 151.782315 121.545478)
-				(xy 151.790903 121.542944)
-			)
-		)
-	)
-	(zone
-		(net 22)
-		(net_name "/USB_P")
-		(layer "F.Cu")
-		(uuid "822fb469-c595-41b7-8072-8480e0241ab6")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30110)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 133.892 119.005) (xy 133.892 119.255) (xy 134.042 119.28) (xy 134.663 119.13) (xy 134.042 118.98)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 134.044313 118.980558) (xy 134.517276 119.094801) (xy 134.615915 119.118627) (xy 134.623152 119.123901)
-				(xy 134.624541 119.132747) (xy 134.619267 119.139984) (xy 134.615915 119.141373) (xy 134.044318 119.27944)
-				(xy 134.039647 119.279607) (xy 133.99369 119.271948) (xy 133.901776 119.256629) (xy 133.894179 119.251888)
-				(xy 133.892 119.245088) (xy 133.892 119.014911) (xy 133.895427 119.006638) (xy 133.901774 119.00337)
-				(xy 134.039652 118.980391)
 			)
 		)
 	)
@@ -17254,13 +16581,13 @@
 		)
 	)
 	(zone
-		(net 4)
-		(net_name "Net-(D1-K)")
+		(net 30)
+		(net_name "Net-(D3-A)")
 		(layer "F.Cu")
-		(uuid "8a037493-caaa-4200-9cf2-ccf1a4abad0b")
+		(uuid "8a270cd7-ae9f-477b-9519-fb5d627731ac")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
-		(priority 30020)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -17279,16 +16606,13 @@
 		)
 		(polygon
 			(pts
-				(xy 149.3405 121.414) (xy 149.3405 121.664) (xy 149.881835 121.9765) (xy 150.2165 121.539) (xy 149.881835 121.1015)
+				(xy 133.742 116.965) (xy 133.742 117.215) (xy 134.042 117.28) (xy 134.663 116.98) (xy 134.042 116.752037)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 149.888077 121.109661) (xy 150.211061 121.531891) (xy 150.213366 121.540545) (xy 150.211061 121.546109)
-				(xy 149.888077 121.968338) (xy 149.880329 121.972827) (xy 149.872935 121.971362) (xy 149.346351 121.667377)
-				(xy 149.340899 121.660273) (xy 149.3405 121.657244) (xy 149.3405 121.420755) (xy 149.343927 121.412482)
-				(xy 149.346349 121.410623) (xy 149.872936 121.106636) (xy 149.881813 121.105469)
+				(xy 133.742 116.965) (xy 133.742 117.215) (xy 134.042 117.28) (xy 134.663 116.98) (xy 134.042 116.752037)
 			)
 		)
 	)
@@ -17492,6 +16816,44 @@
 		)
 	)
 	(zone
+		(net 2)
+		(net_name "+3V3")
+		(layer "F.Cu")
+		(uuid "929770e1-ab37-4905-815d-be0574969b7b")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 151.18108 120.752803) (xy 151.004303 120.92958) (xy 151.353 121.720218) (xy 151.791207 121.539707)
+				(xy 151.934218 121.064)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 151.18108 120.752803) (xy 151.004303 120.92958) (xy 151.353 121.720218) (xy 151.791207 121.539707)
+				(xy 151.934218 121.064)
+			)
+		)
+	)
+	(zone
 		(net 3)
 		(net_name "+5V")
 		(layer "F.Cu")
@@ -17614,10 +16976,10 @@
 		(net 26)
 		(net_name "Net-(J1-CC2)")
 		(layer "F.Cu")
-		(uuid "9b89d070-d006-45ec-8b99-9a7d5185cada")
+		(uuid "a1a1b7e9-c718-470d-a963-2b15c3dae9af")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
-		(priority 30107)
+		(priority 30014)
 		(attr
 			(teardrop
 				(type padvia)
@@ -17642,11 +17004,43 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 134.044313 120.980558) (xy 134.517276 121.094801) (xy 134.615915 121.118627) (xy 134.623152 121.123901)
-				(xy 134.624541 121.132747) (xy 134.619267 121.139984) (xy 134.615915 121.141373) (xy 134.044318 121.27944)
-				(xy 134.039647 121.279607) (xy 133.99369 121.271948) (xy 133.901776 121.256629) (xy 133.894179 121.251888)
-				(xy 133.892 121.245088) (xy 133.892 121.014911) (xy 133.895427 121.006638) (xy 133.901774 121.00337)
-				(xy 134.039652 120.980391)
+				(xy 133.892 121.005) (xy 133.892 121.255) (xy 134.042 121.28) (xy 134.663 121.13) (xy 134.042 120.98)
+			)
+		)
+	)
+	(zone
+		(net 30)
+		(net_name "Net-(D3-A)")
+		(layer "F.Cu")
+		(uuid "a1a69d0c-160e-4407-b7a3-4fdaeb548961")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30009)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 133.742 121.545) (xy 133.742 121.795) (xy 134.042 122.007962) (xy 134.663 121.78) (xy 134.042 121.48)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 133.742 121.545) (xy 133.742 121.795) (xy 134.042 122.007962) (xy 134.663 121.78) (xy 134.042 121.48)
 			)
 		)
 	)
@@ -17788,6 +17182,10 @@
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
@@ -17839,13 +17237,13 @@
 		)
 	)
 	(zone
-		(net 29)
-		(net_name "Net-(J1-CC1)")
+		(net 2)
+		(net_name "+3V3")
 		(layer "F.Cu")
-		(uuid "b6e3041f-b92b-4e8b-9081-ab86f01289e3")
+		(uuid "b69b8534-6df8-4c55-9e79-deedbc602be4")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
-		(priority 30108)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -17864,17 +17262,13 @@
 		)
 		(polygon
 			(pts
-				(xy 133.892 118.005) (xy 133.892 118.255) (xy 134.042 118.28) (xy 134.663 118.13) (xy 134.042 117.98)
+				(xy 151.9155 120.6265) (xy 151.6655 120.6265) (xy 151.369651 121.199038) (xy 151.7905 121.54) (xy 152.211349 121.199038)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 134.044313 117.980558) (xy 134.517276 118.094801) (xy 134.615915 118.118627) (xy 134.623152 118.123901)
-				(xy 134.624541 118.132747) (xy 134.619267 118.139984) (xy 134.615915 118.141373) (xy 134.044318 118.27944)
-				(xy 134.039647 118.279607) (xy 133.99369 118.271948) (xy 133.901776 118.256629) (xy 133.894179 118.251888)
-				(xy 133.892 118.245088) (xy 133.892 118.014911) (xy 133.895427 118.006638) (xy 133.901774 118.00337)
-				(xy 134.039652 117.980391)
+				(xy 151.9155 120.6265) (xy 151.6655 120.6265) (xy 151.369651 121.199038) (xy 151.7905 121.54) (xy 152.211349 121.199038)
 			)
 		)
 	)
@@ -18199,45 +17593,6 @@
 		)
 	)
 	(zone
-		(net 30)
-		(net_name "Net-(D3-A)")
-		(layer "F.Cu")
-		(uuid "cc7203eb-352f-4b33-a39e-eb35c36ecd47")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30052)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 133.742 121.545) (xy 133.742 121.795) (xy 134.042 122.007962) (xy 134.663 121.78) (xy 134.042 121.48)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 134.045628 121.481752) (xy 134.178957 121.546163) (xy 134.638146 121.767993) (xy 134.644105 121.774677)
-				(xy 134.643592 121.783617) (xy 134.637089 121.789511) (xy 134.047783 122.005839) (xy 134.038836 122.005473)
-				(xy 134.036978 122.004397) (xy 133.746927 121.798497) (xy 133.742165 121.790913) (xy 133.742 121.788956)
-				(xy 133.742 121.554436) (xy 133.745427 121.546163) (xy 133.75122 121.543002) (xy 134.038063 121.480853)
-			)
-		)
-	)
-	(zone
 		(net 34)
 		(net_name "GND")
 		(layer "F.Cu")
@@ -18310,6 +17665,42 @@
 				(xy 138.018137 120.449449) (xy 138.011324 120.455261) (xy 138.0058 120.455674) (xy 137.643785 120.395623)
 				(xy 137.636185 120.390889) (xy 137.634 120.384081) (xy 137.634 120.149681) (xy 137.637427 120.141408)
 				(xy 137.638461 120.14049) (xy 137.902644 119.932651) (xy 137.911263 119.930229)
+			)
+		)
+	)
+	(zone
+		(net 22)
+		(net_name "/USB_P")
+		(layer "F.Cu")
+		(uuid "d104c637-9b46-4b97-b95d-63d93d2d290c")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30013)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 133.892 120.005) (xy 133.892 120.255) (xy 134.042 120.28) (xy 134.663 120.13) (xy 134.042 119.98)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 133.892 120.005) (xy 133.892 120.255) (xy 134.042 120.28) (xy 134.663 120.13) (xy 134.042 119.98)
 			)
 		)
 	)
@@ -18429,6 +17820,42 @@
 				(xy 143.087011 121.547982) (xy 142.732404 121.695825) (xy 142.72345 121.695846) (xy 142.7234 121.695825)
 				(xy 142.368792 121.547982) (xy 142.362474 121.541635) (xy 142.36235 121.533047) (xy 142.600043 120.904264)
 				(xy 142.606174 120.897738) (xy 142.610987 120.896702) (xy 142.844817 120.896702)
+			)
+		)
+	)
+	(zone
+		(net 5)
+		(net_name "Net-(D2-K)")
+		(layer "F.Cu")
+		(uuid "d4897f6d-c5b6-493f-a572-2afae413bfe9")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30004)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 149.3405 119.763) (xy 149.3405 120.013) (xy 149.881835 120.3255) (xy 150.2165 119.888) (xy 149.881835 119.4505)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 149.3405 119.763) (xy 149.3405 120.013) (xy 149.881835 120.3255) (xy 150.2165 119.888) (xy 149.881835 119.4505)
 			)
 		)
 	)
@@ -18669,6 +18096,44 @@
 				(xy 140.604123 119.715933) (xy 139.939724 119.870063) (xy 139.93262 119.869482) (xy 139.656279 119.755526)
 				(xy 139.649937 119.749204) (xy 139.649923 119.74025) (xy 139.652463 119.73644) (xy 139.815082 119.573821)
 				(xy 139.819158 119.571174) (xy 139.968084 119.514011) (xy 139.975488 119.513684)
+			)
+		)
+	)
+	(zone
+		(net 21)
+		(net_name "/USB_N")
+		(layer "F.Cu")
+		(uuid "e20213e1-c8b5-4e64-83d5-08d246efea42")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30016)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 135.497308 119.662668) (xy 135.320532 119.485892) (xy 135.282 119.48) (xy 134.661293 119.630707)
+				(xy 135.282 119.734286)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 135.497308 119.662668) (xy 135.320532 119.485892) (xy 135.282 119.48) (xy 134.661293 119.630707)
+				(xy 135.282 119.734286)
 			)
 		)
 	)
@@ -19109,6 +18574,42 @@
 		)
 	)
 	(zone
+		(net 21)
+		(net_name "/USB_N")
+		(layer "F.Cu")
+		(uuid "f74ab583-b7af-4224-9450-5c153a640896")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30011)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 133.892 118.505) (xy 133.892 118.755) (xy 134.042 118.78) (xy 134.663 118.63) (xy 134.042 118.48)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 133.892 118.505) (xy 133.892 118.755) (xy 134.042 118.78) (xy 134.663 118.63) (xy 134.042 118.48)
+			)
+		)
+	)
+	(zone
 		(net 31)
 		(net_name "/PB12_5V")
 		(layer "F.Cu")
@@ -19150,7 +18651,7 @@
 	(zone
 		(net 34)
 		(net_name "GND")
-		(layers "F&B.Cu")
+		(layers "F.Cu" "B.Cu")
 		(uuid "ebd60326-522f-42b2-b9f6-4631b186541c")
 		(hatch edge 0.5)
 		(connect_pads
@@ -21223,4 +20724,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )

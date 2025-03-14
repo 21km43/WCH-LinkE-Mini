@@ -3,7 +3,7 @@
 This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-Link.html)
 
 ## Requirements
-* [KiCAD 8.0](https://www.kicad.org/)
+* [KiCAD 9.0](https://www.kicad.org/)
 * [Fabrication-Toolkit (Optional)](https://github.com/bennymeg/Fabrication-Toolkit)
 
 ## Feature
