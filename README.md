@@ -6,10 +6,6 @@ This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-
 * [KiCAD 9.0](https://www.kicad.org/)
 * [Fabrication-Toolkit (Optional)](https://github.com/bennymeg/Fabrication-Toolkit)
 
-## Feature
-* Change USB Connector to Type-C
-* Optimize for ordering [JLCPCB](https://jlcpcb.com)
-
 ## LICENSE
 [MIT LICENSE](/LICENSE)
 
