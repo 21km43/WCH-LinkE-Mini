@@ -2,7 +2,7 @@
 
 This project is compatible with [WCH-LinkE](https://www.wch-ic.com/products/WCH-Link.html).
 
-Boards is optimized for [JLCPCB](https://jlcpcb.com) (includes gerber, bom, cpl, and tooling holes). 
+Boards is optimized for [JLCPCB](https://jlcpcb.com) (includes gerber, bom, cpl, and tooling holes). All components except the CH32V305, USB-C Connector, and Tactile switches are Basic Parts.
 
 ## Requirements
 * [KiCAD 9.0](https://www.kicad.org/)
@@ -21,4 +21,5 @@ Boards is optimized for [JLCPCB](https://jlcpcb.com) (includes gerber, bom, cpl,
 IDC Connectors are available here
 - [IDC-Header(socket)](https://www.digikey.jp/ja/products/detail/sullins-connector-solutions/SBH11-PBPC-D05-ST-BK/1990062)
 - [IDC-Header(header)](https://www.digikey.jp/ja/products/detail/sullins-connector-solutions/SFH11-PBPC-D05-ST-BK/1990087)
+
 
